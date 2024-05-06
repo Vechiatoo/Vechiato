@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+header {
+    background: url(imgs/background/fundo-logo.png);
+    background-size: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+
+.logo img {
+    margin: 30px 0px;
+    max-width: 1080px; 
+    min-width: 250px;
+    width: 70%;
+    max-height: 500px;  
+    min-height: auto;}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-desktop {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.menu-desktop a {
+    font-family: "Jersey 15", sans-serif;
+    font-size: 30px;
+    margin: 0 10px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-desktop a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.menu-desktop a:hover {
+    color: #AD6AB6;
+    text-decoration: underline;
+    
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.botao-menu {
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .menu-desktop {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: none;
+    }
+
+    .botao-menu {
+        background: transparent;
+        display: block;
+        border: none;
+        cursor: pointer;
+        min-width: 125px;
+    }
+
+    .logo img{
+        margin-left: 20px;
+    }
+}
+
+.linha {
+    background-color: #6200ff;
+    height: 10px;
+    box-shadow: 0px 7px 25px 0px rgba(39,49,81,0.71);
+}
+
+/* fim header*/
+
+
+
+/*   Conteudo-Contato   */
+
+
+.caixa-contato {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px 0px;
+
+}
+
+
+form {
+    width: fit-content;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.caixa-contato h1 {
+    margin-bottom: 25px;
+    font-size: 40px;
+}
+
+form input {
+    margin-bottom: 20px;
+    width: 400px;
+    height: 40px;
+    
+}
+form label {
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+form, label, input {
+    display: block;
+    
+}
+textarea {
+    margin-bottom: 20px;
+    max-width: 402px;
+    width: 402px;
+    height: 100px;
+    max-height: 250px;
+}
+.enviar {
+    width: 404px;
+    margin: 0;
+}
+
+.conteudo-contato { 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contato-direita {
+    padding: 0px 40px;
+    margin: 0 auto;
+}
+
+.p-contato {
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+iframe {
+    width: 400px;
+    height: 400px;
+}
+
+.contato-direita img {
+    width: 25px;
+}
+
+.contato-direita li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+
+}
+
+.contato-direita a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.contato-direita a:hover {
+    text-decoration: underline;
+}
+
+.contato-esquerda {
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: #414141;
+    color: white;
+}
+
+
+.logo-footer img {
+
+    width: 300px;
+    margin: 40px 20px 10px 20px;
+}
+
+.footer-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+
+}
+
+.caixas-footer {
+    margin: 20px;
+}
+
+.endereco {
+    width: 300px;
+}
+
+
+.caixas-footer h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.linhas {
+    display: block;
+    border-bottom: 0.5px solid grey;
+    margin: 10px 0px;
+    color: grey;
+}
+
+.copy {
+    background-color: #202020;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: bold;
+    display: block;
+}
+
+.englobado {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+.social ul a{
+    display: block;
+    width: fit-content;
+    margin: 8px 0px;
+    text-decoration: none;
+    color: white;
+}
+
+
+.social ul a:hover {
+    text-decoration: underline;
+}
+
+
+.img-social {
+    margin-right: 5px;
+    width: 25px;
+}
+
+.social li {
+    display: flex;
+    align-items: center;
+}
+
+.linhas-contato {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+
+}
