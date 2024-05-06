@@ -104,22 +104,24 @@ header a {
 
 .caixa-contato {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 50px 0px;
+    
 
 }
 
 
 form {
-    width: fit-content;
-    padding: 20px;
+    width: 400px;
     margin-bottom: 20px;
+    margin: 0 40px;
 }
 
 .caixa-contato h1 {
     margin-bottom: 25px;
     font-size: 40px;
+    width: fit-content;
 }
 
 form input {
@@ -127,31 +129,39 @@ form input {
     width: 400px;
     height: 40px;
     
+    
 }
 form label {
     margin-bottom: 5px;
     font-size: 20px;
+    width: fit-content;
 }
 
 form, label, input {
     display: block;
     
+    
 }
 textarea {
     margin-bottom: 20px;
-    max-width: 402px;
-    width: 402px;
+    width: 400px;
     height: 100px;
     max-height: 250px;
+    
+
 }
-.enviar {
-    width: 404px;
-    margin: 0;
-}
+
+
+
 
 .conteudo-contato { 
     display: flex;
     flex-wrap: wrap;
+}
+
+iframe {
+    width: 400px;
+    height: 400px;
 }
 
 .contato-direita {
@@ -164,10 +174,7 @@ textarea {
     text-decoration: underline;
 }
 
-iframe {
-    width: 400px;
-    height: 400px;
-}
+
 
 .contato-direita img {
     width: 25px;
@@ -177,6 +184,7 @@ iframe {
     display: flex;
     align-items: center;
     margin: 10px 0px;
+    
 
 }
 
@@ -184,6 +192,7 @@ iframe {
     font-size: 20px;
     color: black;
     text-decoration: none;
+    width: fit-content;
 }
 
 .contato-direita a:hover {
@@ -193,6 +202,7 @@ iframe {
 .contato-esquerda {
     margin: 0 auto;
     margin-bottom: 20px;
+
 
 }
 
@@ -299,4 +309,41 @@ footer {
     flex-wrap: wrap;
     margin: 10px 0px;
 
+}
+
+@media screen and (max-width: 1050px) {
+    form {
+        width: 345px;
+    }
+
+    form input {
+        margin-bottom: 20px;
+        width: 345px;
+        height: 40px;
+    }
+
+    textarea {
+        margin-bottom: 20px;
+        width: 345px;
+        height: 100px;
+        max-height: 250px;
+    }
+
+    iframe {
+        width: 345px;
+        height: 345px;
+    }
+
+    .conteudo-contato { 
+        display: flex;
+        flex-wrap: wrap;
+        width: 350px;
+    }
+
+    .contato-direita {
+        padding: 0px 0px;
+        margin: 0 auto;
+        width: 345px;
+
+    }
 }
