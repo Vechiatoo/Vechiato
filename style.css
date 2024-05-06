@@ -13,7 +13,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+
 }
 
 
@@ -65,28 +65,6 @@ header a {
 
 .botao-menu {
     display: none;
-}
-
-@media screen and (max-width: 1050px) {
-    .menu-desktop {
-        display: none;
-    }
-
-    .menu-mobile {
-        display: none;
-    }
-
-    .botao-menu {
-        background: transparent;
-        display: block;
-        border: none;
-        cursor: pointer;
-        min-width: 125px;
-    }
-
-    .logo img{
-        margin-left: 20px;
-    }
 }
 
 .linha {
@@ -344,6 +322,24 @@ footer {
         padding: 0px 0px;
         margin: 0 auto;
         width: 345px;
+    }
+    .menu-desktop {
+        display: none;
+    }
 
+    .menu-mobile {
+        display: none;
+    }
+
+    .botao-menu {
+        background: transparent;
+        display: block;
+        border: none;
+        cursor: pointer;
+        min-width: 125px;
+    }
+
+    .logo img{
+        margin-left: 20px;
     }
 }
