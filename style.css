@@ -13,18 +13,23 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    height: fit-content;
+    flex-wrap: wrap;
 }
 
 
 
 .logo img {
-    margin: 30px 0px;
-    max-width: 1080px; 
-    min-width: 250px;
-    width: 70%;
-    max-height: 500px;  
-    min-height: auto;}
+    width: 400px;
+}
+
+.logo {
+    margin: 20px 0px;
+}
+
+
+
+
 
 header a {
     color: white;
@@ -58,23 +63,110 @@ header a {
     text-decoration: underline;
     
 }
-
-.menu-mobile {
-    display: none;
-}
-
-.botao-menu {
-    display: none;
-}
-
 .linha {
     background-color: #6200ff;
     height: 10px;
     box-shadow: 0px 7px 25px 0px rgba(39,49,81,0.71);
 }
 
+
+
+.navegacao a{
+    font-size: 22px;
+    margin: 0px 15px;
+    padding: 5px 10px;
+}
+
+.navegacao a:hover {
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
 /* fim header*/
 
+
+
+
+/*CARDS*/
+
+.servicos {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.servicos h1 {
+    width: 92%;
+    text-align: start;
+    font-size: 42px;
+    font-weight: bold;
+    padding: 40px 0px 0px 0px;
+
+}
+
+  /* Card */
+.cartao {
+    width: 300px;
+    height: 500px;
+    margin: 25px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+}
+
+/* Card Header*/
+.cartao-header {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+
+
+  
+  .cartao-img {
+    min-width: 100%;
+    width: auto;
+    height: 100%;
+  }
+  
+  /* Card Body */
+  .cartao-body {
+    height: 170px;
+    padding: 15px;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  
+  
+  .cartao-titulo {
+    font-size: 30px;
+    margin: 8px 0;
+  }
+  
+  .cartao-texto {
+    font-size: 16px;
+    width: 215px;
+    margin: 0 auto;
+  }
+  
+
+  /* Animação Hover */
+  .cartao:hover {
+    transform: scale3d(1.1, 1.1, 1);
+  }
 
 
 /*   Conteudo-Contato   */
@@ -85,30 +177,36 @@ header a {
     justify-content: center;
     flex-wrap: wrap;
     margin: 50px 0px;
-    
 
 }
 
+.formulario {
+    margin: 0 80px;
+}
 
 form {
     width: 400px;
     margin-bottom: 20px;
-    margin: 0 40px;
+    margin: 0 auto;
 }
 
 .caixa-contato h1 {
     margin-bottom: 25px;
     font-size: 40px;
     width: fit-content;
+    ;
 }
 
 form input {
     margin-bottom: 20px;
     width: 400px;
     height: 40px;
-    
-    
 }
+
+.espaco-input {
+    padding: 0.5em;
+}
+
 form label {
     margin-bottom: 5px;
     font-size: 20px;
@@ -144,7 +242,7 @@ iframe {
 }
 
 .contato-direita {
-    padding: 0px 40px;
+    padding: 0px 80px;
     margin: 0 auto;
 }
 
@@ -324,23 +422,31 @@ footer {
         margin: 0 auto;
         width: 345px;
     }
-    .menu-desktop {
+
+    .logo img {
+        width: 300px;
+    }
+    
+    .logo {
+        margin: 15px 0px;
+    }
+
+    .navegacao {
         display: none;
     }
-
-    .menu-mobile {
-        display: none;
-    }
-
-    .botao-menu {
-        background: transparent;
-        display: block;
-        border: none;
-        cursor: pointer;
-        min-width: 125px;
-    }
-
-    .logo img{
-        margin-left: 20px;
+    .cartao-header {
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+      }
+      .cartao {
+        width: 300px;
+        height: 450px;
+        margin: 25px;
+        background-color: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+        transition: 0.3s;
     }
 }
