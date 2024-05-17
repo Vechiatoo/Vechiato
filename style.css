@@ -7,6 +7,7 @@
     list-style: none;
 }
 
+
 header {
     background: url(imgs/background/fundo-logo.png);
     background-size: 100%;
@@ -94,6 +95,31 @@ header a {
 
 
 
+.home {
+    margin: 0 auto;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.home h1 {
+    width: 92%;
+    text-align: start;
+    font-size: 42px;
+    font-weight: bold;
+    padding: 50px 0px 0px 0px;
+    margin: 0 auto;
+}
+
+.home p {
+    font-size: 26px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+}
+
+
 
 /*CARDS*/
 
@@ -111,7 +137,8 @@ header a {
     text-align: start;
     font-size: 42px;
     font-weight: bold;
-    padding: 40px 0px 0px 0px;
+    padding: 50px 0px 0px 0px;
+    margin-bottom: 20px;
 
 }
 
@@ -123,7 +150,7 @@ header a {
     background-color: #fff;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     transition: 0.3s;
 }
 
@@ -177,6 +204,7 @@ header a {
     justify-content: center;
     flex-wrap: wrap;
     margin: 50px 0px;
+
 
 }
 
@@ -448,5 +476,9 @@ footer {
         overflow: hidden;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
         transition: 0.3s;
+    }
+
+    .home p {
+        font-size: 20px;
     }
 }
